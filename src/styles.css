@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #323235 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }  
+::-webkit-scrollbar {
+    width: 10px;
+  
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    background:#38383a; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background:#1f1f22 ; 
+  }
+ #pagination  .ngx-pagination .current { background: #8ec038}
+ #pagination  .ngx-pagination{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: #1f1f22;
+  
+ }

@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3" *ngFor='let user of users'>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="{{user.avatar}}" alt="Avatar" style="width:300px;height:300px;border-radius: 25%;
+            ">
+          </div>
+          <div class="flip-card-back">
+            <h1>{{user.first_name}} {{user.last_name}}</h1>
+            <h2>{{user.email}}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
